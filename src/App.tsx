@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import useTracking from "./hooks/useTracking";
 import FloatingButtons from "./components/FloatingButtons";
 import OrderFormView from "./components/OrderFormView";
 import HomeView from "./components/HomeView";
@@ -13,6 +14,10 @@ import { ShieldCheck, FileText, AlertTriangle, X, Check, ArrowUpRight } from "lu
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState("home");
+  
+  // Activate global analytics tracking
+  useTracking(currentPage);
+
   const [orderModalOpen, setOrderModalOpen] = useState(false);
   const [legalModalType, setLegalModalType] = useState<"privacy" | "terms" | "disclaimer" | null>(null);
 

@@ -185,7 +185,18 @@ export default function Footer({ setCurrentPage, openOrderModal, openLegalModal 
         {/* Bottom row: copyright & legal link */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 space-y-4 md:space-y-0">
           <div>
-            <p>© {currentYear} Pihu Medical. All Rights Reserved. Crafted with care in Tekari, Bihar.</p>
+            <p>
+              © {currentYear} Pihu Medical. All Rights Reserved. Crafted with care in Tekari, Bihar.{" "}
+              <span className="opacity-75">|</span> Developed by{" "}
+              <a
+                href="https://main.webmakerit.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brand-green hover:text-brand-green-dark hover:underline transition-colors font-medium"
+              >
+                WMIT
+              </a>
+            </p>
           </div>
           
           <div className="flex flex-wrap gap-4 md:gap-6 justify-center">
