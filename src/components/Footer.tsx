@@ -187,15 +187,8 @@ export default function Footer({ setCurrentPage, openOrderModal, openLegalModal 
           <div>
             <p>
               © {currentYear} Pihu Medical. All Rights Reserved. Crafted with care in Tekari, Bihar.{" "}
-              <span className="opacity-75">|</span> Developed by{" "}
-              <a
-                href="https://main.webmakerit.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-brand-green hover:text-brand-green-dark hover:underline transition-colors font-medium"
-              >
-                WMIT
-              </a>
+              <span className="opacity-75">|</span> {" "}
+              <a href="#" className="wmit-popup-trigger hover:text-white underline transition-colors" target="_blank" rel="noopener noreferrer">Developed by WMIT</a>
             </p>
           </div>
           
